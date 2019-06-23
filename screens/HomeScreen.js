@@ -12,9 +12,11 @@ import { Modal, Text, Provider } from 'react-native-paper';
 import { Searchbar, Card, Title, Paragraph } from 'react-native-paper';
 import { Constants, Location, Permissions } from 'expo';
 
+
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
+
     state = {
       status: 'checked',
       title: '',
@@ -37,46 +39,46 @@ export default function HomeScreen() {
     <View>
       <ScrollView>
         <View>
+      
+            <Card.Cover style={{marginTop: 14}} source={{ uri: 'https://cryptotrade-hq.com/sbhack/parcel.jpg' }} />
 
             <TextInput
               style={{backgroundColor: 'white', margin: 5}}
               label='Parcel ID'
-              value={this.state.title}
-              onChangeText={title => this.setState({ title })}
+             
             />
 
             <TextInput
               style={{backgroundColor: 'white', margin: 5}}
               label='User Email '
-              value={this.state.title}
-              onChangeText={title => this.setState({ title })}
+              
             />
 
            <TextInput
               style={{backgroundColor: 'white', margin: 5}}
               label='trackLocation'
-              value={this.state.title}
-              onChangeText={title => this.setState({ title })}
+              
             />
 
             <TextInput
               style={{backgroundColor: 'white', margin: 5}}
               label='trackDate'
-              value={this.state.title}
-              onChangeText={title => this.setState({ title })}
+              
             />
 
-            <Button style={{margin: 5, padding: 5, backgroundColor: 'rgba(150,0,50,0.8)'}} mode="contained"> Sign NFC Tag</Button>
-            <Button style={{margin: 5, padding: 5, backgroundColor: 'rgba(0,150,50,0.8)'}} mode="contained"> Submit </Button>
+            <Button style={{margin: 5, padding: 5, backgroundColor: 'rgba(150,0,50,0.8)'}} 
+                    mode="contained"> Sign NFC Tag</Button>
+            <Button style={{margin: 5, padding: 5, backgroundColor: 'rgba(0,150,50,0.8)'}} mode="contained"> Submit to chain </Button>
 
 
         </View>
       </ScrollView>
     </View>
   );
+  
 }
 
 HomeScreen.navigationOptions = {
-   title: 'Create Parcel',
+   header: null,
 };
 
