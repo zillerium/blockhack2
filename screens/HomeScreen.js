@@ -66,6 +66,7 @@ export default function HomeScreen() {
               onChangeText={title => this.setState({ title })}
             />
 
+            <Button style={{margin: 5, padding: 5, backgroundColor: 'rgba(150,0,50,0.8)'}} mode="contained"> Sign NFC Tag</Button>
             <Button style={{margin: 5, padding: 5, backgroundColor: 'rgba(0,150,50,0.8)'}} mode="contained"> Submit </Button>
 
 
